@@ -1,0 +1,81 @@
+body{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+
+}
+.display{
+  border: 4px solid aqua;
+  color: aquamarine;
+  font-size: 1.5em;
+  grid-area: display;
+}
+
+.line1{
+  grid-area: line1;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.line2{
+  grid-area: line2;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.line3{
+  grid-area: line3;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.line4{
+  grid-area: line4;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container{
+  border: 6px solid aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "display display display display"
+  "line1 line1 line1 line1"
+  "line2 line2 line2 line2"
+  "line3 line3 line3 line3"
+  "line4 line4 line4 line4"
+  "clearbox clearbox clearbox clearbox";
+
+}
+p{
+  margin: 10px;
+  
+  
+
+}
+button{
+  border: 3px solid aquamarine;
+  background-color: black;
+  color: aqua;
+  font-size: 1.5rem;
+  width: 100%%;
+
+
+}
+.clearbox{
+  grid-area: clearbox;
+}
+.clear{
+  width: 100%;
+}
+.myself{
+  color: aqua;
+  font-size: 3rem;
+}
+em{
+  color: white;
+  font-weight: bolder;
+}
