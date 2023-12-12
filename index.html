@@ -102,7 +102,7 @@
         <button class="clear" onclick="
         calculation = '';
         document.querySelector('.display').innerHTML = '0';
-        localStorage.removeItem('calculation');
+        
         ">Clear</button>
       </p>
 
@@ -116,11 +116,11 @@
    
     <script>
       
-      let calculation = localStorage.getItem('calculation') || '';
+      let calculation = '';
       function updateCalculation(value){
         calculation += value;
         document.querySelector('.display').innerHTML = calculation;
-        localStorage.setItem('calculation',calculation)
+        
 
       }
     </script>
